@@ -1,5 +1,5 @@
 const openWindow = () => {
-  window.open("https://www.google.com");
+  window.open("https://www.google.com", "_blank");
 };
 
 const hrefWindow = () => {
