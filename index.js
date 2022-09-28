@@ -1,3 +1,3 @@
 setTimeout(() => {
-  window.open("www.google.com", "_top");
+  window.open("https://www.google.com", "_top");
 }, 1000);
