@@ -1,7 +1,23 @@
-setTimeout(() => {
-  let downloadTag = document.createElement("a");
-  downloadTag.setAttribute("href", "https://www.google.com");
-  document.body.appendChild(downloadTag);
-  downloadTag.click();
-  document.body.removeChild(downloadTag);
-}, 1000);
+window.onload = () => {
+  // let a = document.createElement("a");
+  // a.setAttribute("href", "https://www.google.com");
+  // a.setAttribute("target", "_blank");
+  // document.body.appendChild(a);
+  // a.click();
+  // document.body.removeChild(a);
+
+  window.open("https://www.google.com", "popup", "fullscreen");
+};
+
+function windowOpen() {
+  window.open("https://www.google.com", "popup", "fullscreen");
+}
+
+function hrefOpen() {
+  let a = document.createElement("a");
+  a.setAttribute("href", "https://www.google.com");
+  a.setAttribute("target", "_blank");
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
