@@ -17,6 +17,12 @@ window.onload = () => {
   }
 
   document.getElementById("agent").innerText = window.navigator.userAgent;
+
+  document.getElementById("textarea").value = JSON.stringify(
+    window.navigator.userAgentData,
+    undefined,
+    2
+  );
 };
 
 function handleClick() {
