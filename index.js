@@ -19,7 +19,7 @@ window.onload = () => {
   document.getElementById("agent").innerText = window.navigator.userAgent;
 
   document.getElementById("textarea").value = JSON.stringify(
-    window.navigator.userAgentData,
+    window.navigator.standalone,
     undefined,
     2
   );
