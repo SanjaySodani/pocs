@@ -15,6 +15,8 @@ window.onload = () => {
     // not iOS
     document.getElementById("head1").innerText = "Not iOS browser";
   }
+
+  document.getElementById("agent").innerText = window.navigator.userAgent;
 };
 
 function handleClick() {
